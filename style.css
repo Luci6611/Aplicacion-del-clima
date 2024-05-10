@@ -6,6 +6,8 @@
 }
 body{
     background: #222;
+    display: flex;
+    justify-content: center;
 }
 .card{
     width: 90%;
@@ -19,6 +21,7 @@ body{
 }
 .search{
     width: 100%;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,4 +94,36 @@ body{
     margin-top: 10px;
     display: none;
 
+}
+
+@media only screen  and (max-width: 461px) {
+    .search {
+        flex-direction: column;
+        width: 100%;
+    }
+    .search input{
+        width: 100%;
+        padding: 17px;
+        margin: 0 0 15px 0;
+    }
+    .details{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .prim{
+        margin: 0 10px;
+        display: flex;
+        
+    }
+    .details .col{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .details .col img{
+      margin: 10px 0;
+      order: 1;
+    }
+    
 }
